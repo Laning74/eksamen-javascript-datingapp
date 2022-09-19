@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --turquoise-clr: #00b7a1;
+  --turquoiseLight-clr: #00ffff;
+  --orange-clr: #fc8a2d;
+  --beige-clr: #fff5e9;
+  --darRed-clr: #b51818;
+}
+
+body {
+  background: url(../images/background.people.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header section starts here */
+
+.wrapper-container {
+  display: grid;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+button {
+  border: none;
+  font-weight: 600;
+  font-style: normal;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--orange-clr);
+  box-shadow: 1px 3px black;
+}
+
+button:hover {
+  background-color: var(--darRed-clr);
+  color: white;
+}
+
+.exit-btn {
+  width: 170px;
+}
+
+.save-btn {
+  width: 170px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.register {
+  background-color: white;
+  width: 160px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 30px;
+  box-shadow: 1px 3px black;
+}
+.register:hover {
+  background-color: var(--orange-clr);
+}
+
+.register a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.login {
+  background-color: white;
+  width: 160px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  box-shadow: 1px 3px black;
+}
+
+.login:hover {
+  background-color: var(--orange-clr);
+}
+
+.login a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Registrering og Login */
+
+.register-user-container {
+  background: linear-gradient(to right, #00b7a1, #00ffff);
+  width: 400px;
+  border: 1px solid;
+  display: grid;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  z-index: 999;
+  height: auto;
+  text-align: center;
+}
+
+.login-user-container {
+  background: linear-gradient(to right, #00b7a1, #00ffff);
+  width: 400px;
+  border: 1px solid;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  z-index: 990;
+  height: 330px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.login-user-container h2 {
+  padding-bottom: 20px;
+}
+
+input {
+  margin: 0.3em;
+  width: 80%;
+  border-radius: 17px;
+  height: 33px;
+  padding-left: 1em;
+  border: none;
+  background-color: var(--beige-clr);
+  font-size: 1em;
+}
+
+#image-input {
+  background-color: transparent;
+}
+
+#picture {
+  width: 300px;
+  height: 170px;
+  border: 1px solid black;
+  background-color: rgba(245, 245, 245, 0.568);
+  background-position: center;
+  background-size: cover;
+  margin-left: 48px;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  display: flex;
+  margin: 10px;
+}
+
+.link-register,
+.link-login {
+  cursor: pointer;
+}
+
+.link-register {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-style: italic;
+  color: black;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style-type: none;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60%;
+}
+
+/* Brukere i liste etter registrering av nye brukere */
+
+.users {
+  background: linear-gradient(to right, #00b7a1, #00ffff);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.users div {
+  margin: 20px;
+  background: linear-gradient(to right, #fc8a2d, #eea76d);
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 1px 3px black;
+}

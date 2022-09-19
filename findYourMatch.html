@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Night</title>
+    <link rel="stylesheet" href="./css/findYourMatch.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <a href="index.html">
+          <img
+            src="./images/dateNightLogo.png"
+            alt="Date Night logo"
+            class="logo"
+          />
+        </a>
+        <div class="nav-btn">
+          <button class="home"><a href="./index.html">HOME</a></button>
+          <button class="take-chance">
+            <a href="./takeChanceBeLucky.html">TAKE A CHANCE - BE LUCKY</a>
+          </button>
+          <button class="show-like-match">
+            <a>&#10084; SEE YOUR MATCHES &#10084;</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="tittel">
+      <h1>Find your perfect MATCH on Date Night!</h1>
+    </div>
+
+    <!-- Searchbar -->
+
+    <div class="searchbar-container">
+      <input
+        type="text"
+        placeholder="Search for name, city or country..."
+        class="searchbar"
+      />
+    </div>
+
+    <!-- Wrapper Cards begynner her -->
+
+    <main class="wrapper">
+      <cards>
+        <div class="card" id="female-btn">
+          <img src="./images/femaleSymbol.png" alt="female symbol" />
+        </div>
+      </cards>
+      <cards>
+        <div class="card" id="male-female-btn">
+          <img
+            src="./images/maleFemaleSymbol.png"
+            alt="male and female symbol"
+          />
+        </div>
+      </cards>
+      <cards>
+        <div class="card" id="male-btn">
+          <img src="./images/maleSymbol.png" alt="male symbol" />
+        </div>
+      </cards>
+    </main>
+
+    <!-- Container for og liste ut brukere fra Api -->
+
+    <div class="user-list-container">
+      <ul class="user-list"></ul>
+    </div>
+
+    <script src="./js/findYourMatch.js"></script>
+  </body>
+</html>

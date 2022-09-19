@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Night</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="nav-btn">
+      <button class="register"><a> REGISTER</a></button>
+      <button class="login"><a> LOGIN</a></button>
+    </div>
+
+    <!-- Her kommer registrering -->
+    <div class="register-user-container">
+      <h2>Register new user to Date Night</h2>
+      <input type="file" id="image-input" accept="image/png, image/jpg" />
+      <div id="picture"></div>
+      <form id="userForm">
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Gender" name="gender" required />
+        <input type="number" placeholder="Age" name="dob" required />
+        <input type="text" placeholder="Location" name="location" required />
+        <input type="text" placeholder="E-mail" name="email" required />
+        <input type="text" placeholder="Password" name="password" required />
+        <div class="btn-container">
+          <button class="exit-btn">EXIT</button>
+          <button class="save-btn">SAVE</button>
+        </div>
+      </form>
+      <p class="link-login">Allredy have a user? Go to login!</p>
+    </div>
+
+    <!-- Her kommer Login -->
+
+    <div class="login-user-container">
+      <h2>Login to Date Night</h2>
+
+      <div class="email">
+        <input
+          type="text"
+          placeholder="E-mail"
+          id="email"
+          name="email"
+          required
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+      <div class="btn-container">
+        <button class="exit2-btn">EXIT</button>
+        <button onclick="Login()" class="login-btn">LOGIN</button>
+      </div>
+      <p class="link-register">Not a member? Go to register!</p>
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="wrapper-container">
+      <button class="find-match">
+        <a href="./findYourMatch.html">Find your perfect MATCH</a>
+      </button>
+      <button class="take-chance">
+        <a href="./takeChanceBeLucky.html"
+          >Take a chance <br />
+          GET LUCKY</a
+        >
+      </button>
+    </div>
+
+    <!-- Container for liste ut brukere i api -->
+
+    <div class="user-list-container">
+      <ul class="users"></ul>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

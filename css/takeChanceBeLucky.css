@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --turquoise-clr: #00b7a1;
+  --turquoiseLight-clr: #00ffff;
+  --orange-clr: #fc8a2d;
+  --beige-clr: #fff5e9;
+  --darRed-clr: #b51818;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header section starts here */
+
+.logo {
+  width: 16rem;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.nav {
+  display: block;
+}
+
+.nav-btn {
+  display: flex;
+  float: right;
+  margin-right: 50px;
+}
+
+.home {
+  background-color: white;
+  width: 160px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  box-shadow: 1px 3px black;
+}
+.home:hover {
+  background-color: var(--orange-clr);
+}
+
+.home a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.find-match {
+  background-color: white;
+  width: 270px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  float: right;
+  margin-top: 30px;
+  box-shadow: 1px 3px black;
+}
+
+.find-match:hover {
+  background-color: var(--orange-clr);
+}
+
+.find-match a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.tittel,
+.tittel-date-night h1 {
+  text-align: center;
+  position: relative;
+  font-size: 22px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tittel h1,
+.tittel-date-night h1 {
+  color: var(--darRed-clr);
+  font-size: 4rem;
+}
+
+/* Placeholder for random tall */
+
+.placeholder-container {
+  display: flex;
+  justify-content: center;
+}
+
+#placeholder {
+  background: linear-gradient(to right, #00b7a1, #00ffff);
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  padding-top: 17px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 180px;
+  box-shadow: 1px 3px black;
+  text-align: center;
+}
+
+.lucky-button-container {
+  position: absolute;
+  justify-content: center;
+}
+
+#button {
+  border: none;
+  font-weight: 600;
+  color: white;
+  font-size: 1.4rem;
+  width: 250px;
+  margin: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--orange-clr);
+  box-shadow: 1px 3px black;
+}
+
+/* User Card begynner her */
+
+.wrapper-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.user-profile-container {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 998;
+  box-shadow: 3px 5px black;
+}
+
+.profile-top {
+  background: linear-gradient(to right, #fc8a2d, #eea76d);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.profile-top img {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.delete-btn {
+  background-color: white;
+  width: 150px;
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  margin: 7px;
+  box-shadow: 1px 3px black;
+}
+
+.delete-btn:hover {
+  background-color: var(--turquoiseLight-clr);
+}
+
+.like-btn {
+  background-color: white;
+  width: 150px;
+  color: var(--darRed-clr);
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  margin: 7px;
+  box-shadow: 1px 3px black;
+}
+
+.like-btn:hover,
+.like-btn:focus {
+  background-color: var(--darRed-clr);
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-style: italic;
+  color: black;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Hjerter på skjermen - Kilde
+https://medium.com/front-end-weekly/how-to-fill-your-website-with-lovely-valentines-hearts-d30fe66d58eb
+*/
+
+@keyframes heartfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.heart {
+  z-index: 999;
+  animation: heartfade 6s linear;
+  position: absolute;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #fc2a62;
+  position: absolute;
+  height: 30px;
+  width: 45px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.heart:before {
+  transform: rotate(45deg);
+}
+
+.heart:after {
+  left: 10.5px;
+  transform: rotate(135deg);
+}
